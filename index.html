@@ -183,7 +183,8 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        map.createPane('pane_GoogleSatellite_0');
+        //untuk mengatur basemap//
+		map.createPane('pane_GoogleSatellite_0');
         map.getPane('pane_GoogleSatellite_0').style.zIndex = 400;
         var layer_GoogleSatellite_0 = L.tileLayer('https://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             pane: 'pane_GoogleSatellite_0',
@@ -1733,6 +1734,7 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
+		//untuk mengatur Fasilitas Umum//
         function style_FasilitasUmum_4_0(feature) {
             switch(String(feature.properties['nama'])) {
                 case 'Lapangan Olahraga':
@@ -1753,7 +1755,7 @@
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/kuburan_muslimin.svg',
+            iconUrl: 'markers/ikon_kuburan_muslimin.png',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
